@@ -290,132 +290,7 @@ footer{
     color: #9e9797;
 }
 
-@media screen and (max-width:900px) {
-    header{
-        background-position: center;
-    }
 
-    /*--------------------------------------------------- GALERIA @MEDIA-----------------------------------------------*/
-    .galeria{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .galeria__card p{
-        width: 90%;
-    }
-
-    .galeria__card img{
-        width: 90%;
-    }
-    
-    .cards{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    }
-
-    .cards .card{
-    width: 90%;
-}
-
-    .cards .card:first-child{
-   margin-bottom: 30px;
-}
-
-/*-----------------------------------------------------------NUESTROS CLIENTES @MEDIA-----------------------------------*/
-    .cards{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    }
-
-    .cards .card{
-    width: 90%;
-}
-
-    .cards .card:first-child{
-   margin-bottom: 30px;
-}
-
-/*------------------------------------------------NUESTROS CONJUNTOS @MEDIA----------------------------------------------*/
-
-    .imagen-conjuntos{
-        height: 300px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .imagen-conjuntos .imagen-conjuntos{
-        width: 30%;
-        
-    }
-
-    .imagen-conjuntos .imagen-conjuntos:first-child{
-        margin-bottom: 30px;
-}
-
-/*--------------------------------------------------SERVICIOS @MEDIA----------------------------------------------------*/
-
-    .servicio-cont{
-    justify-content: center;
-    flex-direction: column;
-}
-
-    .servicio-ind{
-    width: 90%;
-    text-align: center;
-}
-
-    .servicio-ind:nth-child(1), .servicio-ind:nth-child(2){
-        margin-bottom: 60px;
-    }
-
-    .servicio-ind .img{
-        width: 90%;
-        height: 250px;
-    }
-}
-
-@media screen and (max-width:500px) {
-    .nav{
-        text-align: center;
-        padding: 20px 0 0 0;
-    }
-
-    .nav_logo{
-        margin-right: 5px;
-    }
-
-    .nav_lista{
-        font-size: 10px;
-    }
-
-    /*------------------------------------------------------ABOUT-SERVCICE----------------------------------------------*/
-
-    .img-about-services{
-        margin-bottom: 60px;
-        width: 99%;
-    }
-
-    .imagen-conjuntos{
-        width: 95%;
-    }
-/*------------------------------------------------------NUESTROS CLIENTES @MEDIA--------------------------------------*/
-
-      .cards .card{
-        height: 250px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    } 
-    
-    .card .cards .img{
-        height: 90px;
-        width: 90px;
-    }
 
 /*----------------------------------------------------FOOTER----------------------------------------------------------*/
 
@@ -440,29 +315,43 @@ footer{
         font-size: 20px;
     }
     
-}
+
 /*--------------------------------------MARCAS APLICANDO GRID--------------------------------------------------------------*/
 
-.grid-container{
-    display: grid;   
-    grid-template-rows: 50% 50% 50%; 
-    grid-template-columns: 1fr 1fr 1fr;
-    border: solid 2px pink;    
-    grid-gap: 5px;    
+.imagen{
+    width: 100%;
 }
 
-.grid-item{
-  text-align: center;
-  padding: 20px;
-  
+.imagen img{
+    width: 100%;
 }
 
-.imagenGrid{
-    width: 400px;
-    height: 500px;
-    padding: 30px;
+.contenedor{
+    width: 100%;
+    height: 100%;
 }
 
+.galeria{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: .5rem;
+    row-gap: .5rem;
+}
+
+@media screen and (max-width:468px){
+    body{
+        background-color: darksalmon;
+    }
+}
+
+@media screen and (min-width:961){
+    .galeria{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 /*--------------------------------------------------------CONTACTANOS----------------------------------------------*/
 *{  
     margin: 0;
@@ -597,7 +486,7 @@ body {
 }
 
 
-@media screen and (min-width:576px) {
+@media screen and (min-width:961px) {
     .contenido-texto-imagen p{
         justify-content: center;
         font-size: 24px;
@@ -620,7 +509,7 @@ body {
     margin: 0 auto;
 }
 
-@media (min-width:768px) {
+@media (min-width:961px) {
     .contenedor {
         max-width: 70%;
 
